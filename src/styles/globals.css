@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .on {
+    @apply border-orange-500 bg-white/60;
+  }
+
+  .yellow-to-orange {
+    @apply text-white bg-orange-400 enabled:hover:bg-orange-500 focus:ring-4 focus:ring-orange-500 dark:bg-orange-600 dark:text-white dark:border-orange-600 dark:enabled:hover:bg-orange-700 dark:enabled:hover:border-orange-700 dark:focus:ring-orange-700
+  }
+
+  .button-orange {
+    @apply w-full text-lg duration-200 cursor-pointer;
+  }
+
+  .cicle-button {
+    @apply p-6 bg-white rounded-full hover:bg-gray-300 duration-200 relative flex items-center justify-center
+  }
+
+  .company-title {
+    @apply text-orange-400 font-semibold text-sm tracking-widest;
+  }
+
+  .announce-title {
+    @apply text-4xl font-bold;
+  }
+
+  .annouce-description {
+    @apply text-gray-500 text-base font-semibold;
+  }
+
+  .annouce-price {
+    @apply text-2xl font-bold;
+  }
+
+  .discount-tag {
+    @apply text-orange-500 bg-orange-100 p-1 px-3 h-fit w-fit font-bold rounded-lg;
+  }
+
+  .announce-oldprice {
+    @apply line-through text-gray-400 text-base font-semibold
+  }
+
+  .counter {
+    @apply text-xl bg-gray-100  py-4 h-full font-bold text-center
+  }
+
+  .counter-btn {
+    @apply bg-gray-100 p-4 h-full hover:bg-gray-300 duration-200 flex items-center justify-center
+  }
+}
