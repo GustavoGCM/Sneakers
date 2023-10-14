@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import ImagesModal from "../ImagesModal/imagesModal";
@@ -9,7 +9,6 @@ const ProductImages = () => {
   const {
     selectedImg,
     rollBtn,
-    openModal,
     setSelectedImg,
     setOpenModal,
     thumbs,
@@ -17,13 +16,7 @@ const ProductImages = () => {
 
   return (
     <section className="md:max-w-[400px] flex flex-col gap-4">
-      <ImagesModal
-        thumbs={thumbs}
-        openModal={openModal}
-        selectedImg={selectedImg}
-        setOpenModal={setOpenModal}
-        setSelectedImg={setSelectedImg}
-      />
+      <ImagesModal />
       <figure className="relative w-screen ml-[-1rem] md:w-full md:ml-0 mt-[-24px]">
         <Image
           src={selectedImg[0]}

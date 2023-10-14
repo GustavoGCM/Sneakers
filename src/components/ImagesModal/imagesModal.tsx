@@ -6,22 +6,16 @@ import Image from "next/image";
 import { Dispatch, SetStateAction, useContext } from "react";
 
 interface ImagesModalProps {
-  selectedImg: string[];
-  setSelectedImg: Dispatch<SetStateAction<string[]>>;
-  openModal: string | undefined;
-  setOpenModal: Dispatch<SetStateAction<string | undefined>>;
-  thumbs: string[][];
+
+
 }
 
 const ImagesModal = ({
-  selectedImg,
-  setSelectedImg,
-  openModal,
-  setOpenModal,
-  thumbs,
-}: ImagesModalProps) => {
-  const { rollBtn } = useContext(productsContext);
 
+}: ImagesModalProps) => {
+  const { rollBtn, selectedImg, setSelectedImg, thumbs, setOpenModal, openModal } = useContext(productsContext);
+  console.log(selectedImg);
+  
   return (
     <Flowbite
       theme={{
