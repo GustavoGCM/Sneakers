@@ -14,7 +14,6 @@ const ImagesModal = ({
 
 }: ImagesModalProps) => {
   const { rollBtn, selectedImg, setSelectedImg, thumbs, setOpenModal, openModal } = useContext(productsContext);
-  console.log(selectedImg);
   
   return (
     <Flowbite

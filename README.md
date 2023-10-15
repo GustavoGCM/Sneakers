@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Pré-requisitos
 
-## Getting Started
-
-First, run the development server:
+Primeiro, inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
@@ -10,27 +8,26 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para visualizar o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura do projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `app/page.tsx`:  Este diretório contém a lógica central da aplicação, incluindo rotas e gerenciamento de estados com o App Router.
+- `src/components`: Aqui, você encontrará componentes reutilizáveis usados para estilização e estruturação da interface do usuário.
+- `public/assets`: Este diretório contém imagens e arquivos SVG que são utilizados para estilização e exibição de recursos visuais no projeto.
+- `src/providers`: Contém funções de interação do lado do cliente e gerenciamento de estados. Aqui, você pode encontrar os contextos e provedores relacionados ao estado
+- `src/services/intefaces.ts`: Este arquivo contém as tipagems de objetos importantes para manter a coerência da aplicalção.
+- `src/services/utils.ts`: Contém os dados mockados para renderização da página estática.
 
-## Learn More
+## Navegando no Projeto
 
-To learn more about Next.js, take a look at the following resources:
+Para se localizar facilmente no projeto, aqui estão algumas informações úteis:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app`: Este diretório contém as páginas da aplicação. As páginas são componentes React que representam as diferentes rotas da aplicação Next.js. Você pode encontrar as páginas aqui e personalizá-las conforme necessário. Para adicionar ou editar uma página, basta criar ou modificar um arquivo `.ts` ou `.tsx` neste diretório.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `src/components`: Aqui, você encontrará componentes reutilizáveis que são usados para a estilização e estruturação da interface do usuário. Se desejar fazer alterações na aparência ou no comportamento da aplicação, este é o lugar onde você pode adicionar ou editar esses componentes. Você pode reutilizá-los em várias partes do seu projeto.
 
-## Deploy on Vercel
+A partir destes diretórios, você pode explorar e personalizar o projeto de acordo com suas necessidades. Sinta-se à vontade para adicionar, modificar ou excluir páginas e componentes para atender aos requisitos específicos do seu projeto. Certifique-se de que as alterações estão em conformidade com as melhores práticas do Next.js e React.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
